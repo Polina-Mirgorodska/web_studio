@@ -8,11 +8,18 @@
   --footer-contact:rgba(255, 255, 255, 0.60);
   --footer-background:#2F303A;
   --portfolio-line:#ECECEC;
-  
 }
 
 body{
   font-family: Roboto;
+}
+
+.header{
+  background: var(--main-color);
+}
+
+.effective{
+  background: var(--footer-background);
 }
 
 .logo-first{
@@ -33,7 +40,7 @@ line-height: 1.38;
 letter-spacing: 0.78px;
 }
 
-.header-nav-list{
+.header-link{
   color: var(--text-color);
 font-size: 14px;
 font-weight: 500;
@@ -41,7 +48,7 @@ line-height: 1.14;
 letter-spacing: 0.28px;
 }
 
-.header-list{
+.header-contact{
 color: var(--desk-color);
 font-size: 14px;
 font-weight: 500;
@@ -66,6 +73,7 @@ text-transform: uppercase;
   font-weight: 700;
   line-height: 1.87; /* 187.5% */
   letter-spacing: 0.96px;
+  background: var(--accent-color);
 }
 
 .features-title{
@@ -121,6 +129,10 @@ line-height: 1.18;
 letter-spacing: 0.48px;
 }
 
+.footer{
+  background: var(--footer-background);
+}
+
 .footer-item:first-child{
   color: var(--main-color);
   font-size: 14px;
@@ -129,7 +141,7 @@ letter-spacing: 0.48px;
   letter-spacing: 0.42px;  
 }
 
-.footer-item{
+.footer-contact{
   color: var(--footer-contact);
   font-size: 14px;
   font-weight: 400;
@@ -153,6 +165,7 @@ letter-spacing: 0.48px;
   font-weight: 500;
   line-height: 1.62; /* 162.5% */
   letter-spacing: 0.48px;  
+  background: var(--team-background);
 }
 
 .filters-title{
