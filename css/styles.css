@@ -8,6 +8,7 @@
   --footer-contact:rgba(255, 255, 255, 0.60);
   --footer-background:#2F303A;
   --portfolio-line:#ECECEC;
+  --portfolio-outline:#EEE;
 }
 
 body{
@@ -72,6 +73,10 @@ line-height: 1.14;
 letter-spacing: 0.28px;
 }
 
+.header-link:hover{
+  color: var(--accent-color);
+}
+
 .header-items{
   display: flex;
   gap: 50px;
@@ -84,6 +89,10 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
+}
+
+.header-contact:hover{
+  color: var(--accent-color);
 }
 
 .effective-title{
@@ -109,6 +118,7 @@ margin-bottom: 30px;
   background: var(--accent-color);
   padding: 10px 32px;
   border-radius: 4px;
+  border: none;
 }
 
 .features{
@@ -200,6 +210,7 @@ margin-bottom: 50px;
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.48px;  
+  margin-bottom: 10px;
 }
 
 .team-text{
@@ -217,16 +228,19 @@ letter-spacing: 0.48px;
   padding-bottom: 60px;
 }
 
-.footer-list{
+.footer-contacts{
   margin-top: 20px;
+
 }
 
-.footer-item:first-child{
-  color: var(--main-color);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71; /* 171.429% */
-  letter-spacing: 0.42px;  
+/* .footer-item{
+  margin-top: 9px;
+} */
+
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 
 .footer-contact{
@@ -236,6 +250,16 @@ letter-spacing: 0.48px;
   line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;  
 }
+
+.footer-item:first-child>.footer-contact{
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71; /* 171.429% */
+  letter-spacing: 0.42px;  
+}
+
+
 
 .logo-second-footer{
   color: var(--main-color);
@@ -264,6 +288,12 @@ letter-spacing: 0.48px;
   background: var(--team-background);
   border-radius: 4px;
   padding: 6px 22px;
+  border: none;
+}
+
+.filters-btn:hover{
+  background-color: var(--accent-color);
+  color: var(--main-color);
 }
 
 .filters-btn:first-child{
@@ -273,8 +303,12 @@ letter-spacing: 0.48px;
 .filters-items{
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 30px;
+  gap: 30px;
   margin-bottom: 94px;
+}
+
+.filters-item{
+  outline: 1px solid var(--portfolio-outline);
 }
 
 .filters-img{
@@ -282,12 +316,17 @@ letter-spacing: 0.48px;
   height: 294px;
 }
 
+.filters-box{
+  padding: 20px 24px;
+}
+
 .filters-title{
   color: var(--text-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 2; /* 200% */
-  letter-spacing: 1.08px;  
+  letter-spacing: 1.08px; 
+  margin-bottom: 4px; 
 }
 
 .filters-text{
