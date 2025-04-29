@@ -309,6 +309,7 @@ letter-spacing: 0.48px;
 
 .filters-item{
   outline: 1px solid var(--portfolio-outline);
+  flex-basis: calc((100%-60px)/3);
 }
 
 .filters-img{
