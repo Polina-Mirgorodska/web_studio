@@ -131,7 +131,33 @@ margin-bottom: 30px;
   gap: 30px;
 }
 
+.features-item::before{
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: var(--team-background);
+    display: block;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* padding: 25px 100px 25px 100px; */
+}
 
+.features-item:first-child::before{
+  background-image: url(../img/antenna1.png);
+}
+
+.features-item:nth-child(2)::before{
+  background-image: url(../img/clock2.png);
+}
+
+.features-item:nth-child(3)::before{
+  background-image: url(../img/diagram3.png);
+}
+
+.features-item:nth-child(4)::before{
+  background-image: url(../img/astronaut4.png);
+}
 
 .features-title{
   color: var(--text-color);
