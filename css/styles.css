@@ -323,11 +323,13 @@ letter-spacing: 0.48px;
   border-radius: 4px;
   padding: 6px 22px;
   border: none;
+ 
 }
 
 .filters-btn:hover{
   background-color: var(--accent-color);
   color: var(--main-color);
+   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
 .filters-btn:first-child{
@@ -346,6 +348,7 @@ letter-spacing: 0.48px;
   flex-basis: calc((100% - 60px) /3);
 }
 
+
 .filters-img{
   width: 100%;
 }
@@ -354,7 +357,7 @@ letter-spacing: 0.48px;
   padding: 20px 24px;
 }
 
-.filters-box:hover{
+.filters-item:hover{
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
