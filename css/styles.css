@@ -358,14 +358,15 @@ fill: #AFB1B8;
   padding-bottom: 60px;
 }
 
+.footer-box{
+  display: flex;
+}
+
 .footer-contacts{
   margin-top: 20px;
 
 }
 
-/* .footer-item{
-  margin-top: 9px;
-} */
 
 .footer-list{
   display: flex;
@@ -389,8 +390,6 @@ fill: #AFB1B8;
   letter-spacing: 0.42px;  
 }
 
-
-
 .logo-second-footer{
   color: var(--main-color);
   font-family: Raleway;
@@ -398,6 +397,47 @@ fill: #AFB1B8;
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;  
+}
+
+.footer-boxtwo{
+  margin-left: 80px;
+}
+
+.footer-tittle{
+  color: var(--main-color);
+font-size: 14px;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+/* baseline-shift: sub; */
+}
+
+.footer-items{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.footer-link{
+    width: 44px;
+height: 44px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgba(255, 255, 255, 0.10);
+}
+
+.footer-link:hover{
+  background-color: var(--accent-color);
+}
+
+.footer-icon{
+  width: 20px;
+height: 20px;
+fill: var(--main-color);
 }
 
 .filters-list{
