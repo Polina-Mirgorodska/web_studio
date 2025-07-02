@@ -360,6 +360,7 @@ fill: #AFB1B8;
 
 .footer-box{
   display: flex;
+  align-items: baseline;
 }
 
 .footer-contacts{
