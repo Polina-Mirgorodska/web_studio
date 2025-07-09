@@ -243,6 +243,7 @@ padding-bottom: 27px;
 
 position: absolute;
 bottom: 0;
+z-index: 3;
 }
 
 .team{
