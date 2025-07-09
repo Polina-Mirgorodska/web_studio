@@ -245,27 +245,6 @@ position: absolute;
 bottom: 0;
 }
 
-.activity-item:first-child{
-  .activity-subtitle{
-    
-  }
-  
-}
-
-.activity-item:nth-child(2){
-  .activity-subtitle{
-   
-  }
-  
-}
-
-.activity-item:nth-child(3){
-  .activity-subtitle{
-   
-  }
-  
-}
-
 .team{
   padding-top: 94px;
   padding-bottom: 94px;
