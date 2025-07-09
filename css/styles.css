@@ -223,6 +223,49 @@ margin-bottom: 50px;
   gap: 30px;
 }
 
+.activity-item{
+  position: relative;
+}
+
+.activity-subtitle{
+  color: var(--main-color);
+text-align: center;
+font-size: 14px;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+background: rgba(47, 48, 58, 0.80);
+width: 370px;
+padding-top: 27px;
+padding-bottom: 27px;
+
+
+position: absolute;
+bottom: 0;
+}
+
+.activity-item:first-child{
+  .activity-subtitle{
+    
+  }
+  
+}
+
+.activity-item:nth-child(2){
+  .activity-subtitle{
+   
+  }
+  
+}
+
+.activity-item:nth-child(3){
+  .activity-subtitle{
+   
+  }
+  
+}
+
 .team{
   padding-top: 94px;
   padding-bottom: 94px;
