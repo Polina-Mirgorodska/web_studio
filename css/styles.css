@@ -567,6 +567,7 @@ background-color: var(--main-color);
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+  height: 581px;
 }
 
 .model-close {
@@ -582,6 +583,12 @@ background-color: var(--main-color);
   position: absolute;
   top: 8px;
   right: 8px;
+}
+
+.model-close:is(:hover, :focus) {
+  .model-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .model-icon {
@@ -639,16 +646,16 @@ position: relative;
 }
 
 .model-box {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
   display: flex;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
   align-items: center;
+  color: var(--desk-color);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; 
+letter-spacing: 0.42px;
 }
 
 .model-link {
@@ -687,4 +694,27 @@ position: relative;
     position: absolute;
     top: 30px;
     left: 12px;
+}
+
+.model-input:hover,.model-input:focus{
+    outline: 1px solid var(--accent-color);
+
+}
+
+.model-input:hover + .model-ikon,
+.model-input:focus + .model-ikon{
+    fill: var(--accent-color);
+}
+
+.scroll{
+  border-radius: 50%;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  bottom: 50px;
+  right: 50px;
+  background-color: var(--accent-color);
+  width: 40px;
+  height: 40px;
 }
