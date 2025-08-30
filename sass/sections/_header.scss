@@ -1,131 +1,128 @@
-.header{
-  background: var(--main-color);
-  padding-top: 24px ;
+.header {
+  background: $main-color;
+  padding-top: 24px;
   padding-bottom: 25px;
+
  
-}
+  .logo__first {
+    color: $accent-color;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+  }
 
-.header .container{
-  display: flex;
-  align-items: center;
-}
+  .logo__second {
+    color: $logo-color;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+    margin-right: 93px;
+  }
 
-.logo-first{
- color: var(--accent-color);
-font-family: Raleway;
-font-size: 26px;
-font-weight: 700;
-line-height: 1.38;
-letter-spacing: 0.78px;
-}
+  &__list {
+    display: flex;
+    gap: 50px;
+  }
 
-.logo-second{
-  color: var(--logo-color);
-font-family: Raleway;
-font-size: 26px;
-font-weight: 700;
-line-height: 1.38;
-letter-spacing: 0.78px;
-margin-right: 93px;
-}
+  &__item {
+    position: relative;
+  }
 
-.header-list{
-  display: flex;
-  gap: 50px;
+  &__link {
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-}
+    &:hover {
+      color: $accent-color;
+    }
 
-.header-item{
-   position: relative;
-}
-
-.header-link{
-  color: var(--text-color);
-font-size: 14px;
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.28px;
-transition-property: color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover{
-  color: var(--accent-color);
-}
-
-.header-link:hover::after {
+    &:hover::after {
       content: "";
       display: block;
       width: 100%;
       height: 4px;
       border-radius: 2px;
-      background: var(--accent-color);
+      background: $accent-color;
       position: absolute;
       bottom: -34px;
       opacity: 1;
-      transition-property: opacity ;
+      transition-property: opacity;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     }
+  }
 
-.active{
-  color: var(--accent-color);
-}
+  .active {
+    color: $accent-color;
 
-.active::after {
+    &::after {
       content: "";
       display: block;
       width: 100%;
       height: 4px;
       border-radius: 2px;
-      background: var(--accent-color);
+      background: $accent-color;
       position: absolute;
       bottom: -34px;
       opacity: 0;
     }
+  }
 
+  &__items {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+  }
 
-.header-items{
-  display: flex;
-  gap: 30px;
-  margin-left: auto;
-}
+  &__icon {
+    width: 16px;
+    height: 12px;
+    fill: $desk-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.header-icon{
-  width: 16px;
-  height: 12px;
-  fill: var(--desk-color);
-  transition-property: fill;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__element:last-child {
+    .header__icon {
+      width: 10px;
+      height: 16px;
+    }
+  }
 
-.header-element:last-child{
-  .header-icon{
-    width: 10px;
-    height: 16px;
+  &__contact {
+    color: $desk-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: $accent-color;
+      .header__icon {
+        fill: $accent-color;
+      }
+    }
   }
 }
 
-.header-contact{
-color: var(--desk-color);
-font-size: 14px;
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.28px;
-display: flex;
-align-items: center;
-gap: 10px;
-transition-property: color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contact:hover{
-  color: var(--accent-color);
-  .header-icon{
-    fill: var(--accent-color);
+ .header .container {
+    display: flex;
+    align-items: center;
   }
-}
