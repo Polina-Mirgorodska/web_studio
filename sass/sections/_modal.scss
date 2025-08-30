@@ -15,6 +15,10 @@
   pointer-events: none;
 }
 
+.is-hidden .model{
+  transform: translate(-50%, -1000px);
+}
+
 .model {
   background-color: $main-color;
   width: 528px;
@@ -27,6 +31,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+  transition-property: transform;
+  transition-duration: 1000ms;
   /* height: 581px; */
 
   &__close {
