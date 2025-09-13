@@ -1,26 +1,60 @@
 .header {
   background: $main-color;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 10px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 21px 0;
+  }
+
+   @media screen and (min-width: 1200px) {
+    padding: 25px 0;
+  }
+
+  &__logo{
+    margin-right: auto;
+
+     @media screen and (min-width:768px) {
+      margin-right: 88px;
+    }
+
+     @media screen and (min-width:1200px) {
+     margin-right: 93px;
+    }
+  }
 
  
   .logo__first {
     color: $accent-color;
     font-family: Raleway;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
+
+    @media screen and (min-width:1200px) {
+      font-size: 26px;
+    }
   }
 
   .logo__second {
     color: $logo-color;
     font-family: Raleway;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
-    margin-right: 93px;
+   
+    @media screen and (min-width:1200px) {
+      font-size: 26px;
+    }
+  }
+
+  &__nav{
+    display: none;
+
+     @media screen and (min-width:768px) {
+      display: block;
+    }
   }
 
   &__list {
@@ -79,9 +113,19 @@
   }
 
   &__items {
-    display: flex;
-    gap: 30px;
+    display: none;
     margin-left: auto;
+
+     @media screen and (min-width:768px) {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+     @media screen and (min-width:1200px) {
+     gap: 30px;
+      flex-direction: row;
+    }
   }
 
   &__icon {
