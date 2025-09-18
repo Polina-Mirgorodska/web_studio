@@ -34,6 +34,19 @@
     letter-spacing: 0.42px;
   }
 
+    .logo__first {
+    color: $accent-color;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+
+    @media screen and (min-width:1200px) {
+      font-size: 26px;
+    }
+  }
+
   .logo__second__footer {
     color: $main-color;
     font-family: Raleway;
@@ -138,3 +151,4 @@
     fill: $main-color;
   }
 }
+
