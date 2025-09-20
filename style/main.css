@@ -591,12 +591,36 @@ body {
 
 .footer {
   background: #2F303A;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 .footer__box {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    text-align: start;
+  }
+}
+.footer__boxone {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__boxone {
+    text-align: start;
+  }
 }
 .footer__contacts {
   margin-top: 20px;
@@ -636,13 +660,26 @@ body {
 .footer .logo__second__footer {
   color: #FFF;
   font-family: Raleway;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
 }
+@media screen and (min-width: 1200px) {
+  .footer .logo__second__footer {
+    font-size: 26px;
+  }
+}
 .footer__boxtwo {
-  margin-left: 80px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__boxtwo {
+    margin-left: 94px;
+    text-align: start;
+  }
 }
 .footer__tittle {
   color: #FFF;
@@ -679,7 +716,14 @@ body {
   fill: #FFF;
 }
 .footer__boxfree {
-  margin-left: auto;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__boxfree {
+    text-align: start;
+    margin-left: auto;
+  }
 }
 .footer__text {
   color: #FFF;
@@ -693,13 +737,32 @@ body {
 }
 .footer__form {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .footer__input {
-  width: 358px;
+  width: 290px;
   height: 50px;
   background: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+  }
 }
 .footer__btn {
   width: 200px;
@@ -708,7 +771,6 @@ body {
   background: #2196F3;
   border: #2196F3;
   color: #fff;
-  text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -716,7 +778,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 12px;
 }
 .footer__send {
   width: 24px;
