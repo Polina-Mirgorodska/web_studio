@@ -792,6 +792,7 @@ body {
   justify-content: center;
   margin-top: 94px;
   margin-bottom: 56px;
+  flex-wrap: wrap;
 }
 .filters__btn {
   color: #212121;
