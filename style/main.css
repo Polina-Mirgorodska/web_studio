@@ -620,6 +620,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__boxone {
     text-align: start;
+    margin-bottom: 0;
   }
 }
 .footer__contacts {
@@ -679,6 +680,7 @@ body {
   .footer__boxtwo {
     margin-left: 94px;
     text-align: start;
+    margin-bottom: 0;
   }
 }
 .footer__tittle {
@@ -786,13 +788,21 @@ body {
   fill: #FFF;
 }
 
+.filters {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .filters {
+    padding: 94px 0;
+  }
+}
 .filters__list {
   display: flex;
   gap: 8px;
   justify-content: flex-start;
-  margin-top: 94px;
   margin-bottom: 56px;
   flex-wrap: wrap;
+  row-gap: 15px;
 }
 @media screen and (min-width: 768px) {
   .filters__list {
@@ -848,7 +858,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 94px;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
