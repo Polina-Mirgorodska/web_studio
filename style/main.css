@@ -789,10 +789,15 @@ body {
 .filters__list {
   display: flex;
   gap: 8px;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 94px;
   margin-bottom: 56px;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .filters__list {
+    justify-content: center;
+  }
 }
 .filters__btn {
   color: #212121;
@@ -844,13 +849,37 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 94px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .filters__items {
+    flex-direction: row;
+  }
 }
 .filters__item {
   outline: 1px solid #EEE;
-  flex-basis: calc((100% - 60px) / 3);
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .filters__item {
+    width: 450px;
+    height: 404px;
+    flex-basis: calc((100% - 0px) / 1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .filters__item {
+    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters__item {
+    width: 370px;
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .filters__img {
   width: 100%;
