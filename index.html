@@ -17,23 +17,29 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
-    <link rel="stylesheet" href="./style/main.min.css">
+
+    <link rel="stylesheet" href="./style/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <a class="header__logo" href="./index.html"
           ><span class="logo__first">Web</span
-          ><span class="logo__second">Studio</span></a
-        >
+          ><span class="logo__second">Studio</span></a>
+
+          <button type="button" class="header__btn" data-mobile-open><svg class="header__menu">
+            <use href="./img/symbol-defs.svg#icon-menu"></use>
+          </svg></button>
+
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
               <a class="header__link active" href="./index.html">Студія</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="./pages/portfolio.html">Портфоліо</a>
+              <a class="header__link" href="./pages/portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="header__item">
               <a class="header__link" href="">Контакти</a>
@@ -57,6 +63,33 @@
             >
           </li>
         </ul>
+         
+        <!-- мобільне вікно -->
+
+        <div class="mobile" is-hidden data-mobile>
+          <button type="button" class="mobile__close" data-mobile-close>
+            <svg class="mobile-icon">
+              <use href="./img/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile__list">
+            <li class="mobile__item"><a href="./index.html" class="mobile__link">Студія</a></li>
+            <li class="mobile__item"><a href="./pages/portfolio.html" class="mobile__link">Портфоліо</a></li>
+            <li class="mobile__item"><a href="" class="mobile__link">Контакти</a></li>
+          </ul>
+
+          <ul class="mobile__items">
+            <li class="mobile__itm"><a href="tel:+3809611111 11" class="mobile__contact">+38 096 111 11 11</a></li>
+            <li class="mobile__itm"><a href="mailto:info@devstudio.com" class="mobile__contact">info@devstudio.com</a></li>
+          </ul>
+
+          <ul class="mobile__wrap">
+            <li class="mobile__elem"><a href="" class="mobile__social">Instagram</a></li>
+            <li class="mobile__elem"><a href="" class="mobile__social">Twitter</a></li>
+            <li class="mobile__elem"><a href="" class="mobile__social">Facebook</a></li>
+            <li class="mobile__elem"><a href="" class="mobile__social">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -424,10 +457,10 @@
               />
             </label>
             <button class="footer__btn" type="submit">
-                Підписатися
-                <svg class="footer__send">
-                  <use href="./img/symbol-defs.svg#icon-send"></use>
-                </svg>
+              Підписатися
+              <svg class="footer__send">
+                <use href="./img/symbol-defs.svg#icon-send"></use>
+              </svg>
             </button>
           </form>
         </div>
@@ -490,6 +523,7 @@
         </form>
       </div>
     </div>
+    <script type="module" src="./js/menu.js"></script>
     <script type="module" src="./js/modal.js"></script>
   </body>
 </html>
